@@ -53,6 +53,9 @@
 
       config.devicePixelRatio = 1;
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        canvas.style.width = "1080px";
+        canvas.style.height = "1920px";
       }
       loadingBar.style.display = "block";
 
